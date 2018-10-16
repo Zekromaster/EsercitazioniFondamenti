@@ -1,10 +1,13 @@
 // Libraries
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef INCLUDED_DEFINITIONS
+  #define INCLUDED_DEFINITIONS
+  #include <stdio.h>
+  #include <stdlib.h>
 
-// Author
-#define AUTHOR "Zekromaster - Luca Cristiano"
-#define AUTHORMAIL "dev@zekromaster.net"
+  // Author
+  #define AUTHOR "Zekromaster - Luca Cristiano"
+  #define AUTHORMAIL "dev@zekromaster.net"
 
-// Useful stuff
-#define SUCCESS 0
+  // Useful stuff
+  #define SUCCESS 0
+#endif

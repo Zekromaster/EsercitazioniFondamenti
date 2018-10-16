@@ -36,10 +36,8 @@ int main(){
   }
 
   // Calcolo del mese successivo
+  anno = anno + (mese/12);
   mese = (mese % 12) + 1;
-  if (mese == 1){
-    anno = anno + 1;
-  }
 
   // Output
   printf("Il mese successivo è il %d\\%d\n", mese, anno);
