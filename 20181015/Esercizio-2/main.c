@@ -17,7 +17,7 @@
 //@Input: Base e Altezza di un rettangolo
 //@Output: Perimetro, area e diagonale dello stesso
 int main(){
-  // Definizione variabili
+  // Dichiarazione delle variabili
   float b, h;
   float perimetro, area, diagonale;
   // Acquisizione base - con ciclo per verifica errori

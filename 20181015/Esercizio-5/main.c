@@ -16,6 +16,7 @@
 //@Input: Un numero di 5 cifre
 //@Output: Le sue cifre, separate da 3 spazi
 int main(){
+  // Dichirazione delle Variabili
   int numero;
   int cifre[5];
   int current, next;
