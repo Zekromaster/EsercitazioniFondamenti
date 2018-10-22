@@ -70,4 +70,6 @@ int main(){
       printf("Il triangolo è equilatero.\n\n");
       break;
   }
+
+  return(SUCCESS);
 }

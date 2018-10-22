@@ -16,7 +16,7 @@
 //@Input: Una coppia di mese ed anno nel formato mese/anno
 //@Output: Il mese successivo
 int main(){
-  // Definizione Variabili
+  // Dichiarazione delle Variabili
   int mese, anno;
 
   // Ciclo principale - da questo si uscirà solo quando l'input sarà corretto e semanticamente sensato

@@ -10,4 +10,7 @@
 
   // Useful stuff
   #define SUCCESS 0
+
+  // Boolean type
+  typedef enum {false, true} bool;
 #endif

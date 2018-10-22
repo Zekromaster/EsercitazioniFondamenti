@@ -13,33 +13,35 @@
 
 #include "../../definitions.h"
 
-//@Input: Una temperatura, in gradi celsius
-//@Output: Un'espressione empirica del suo effetto
+//@Input: Due numeri
+//@Output: Se i due numeri sono multipli l'uno dell'altro
 int main(){
+
   // Dichiarazione delle Variabili
-  int temperatura;
+  int numeri[2];
+  bool outputDone = false;
 
   // Input
-  printf("Inserisci la temperatura corrente in gradi Celsius: ");
-  scanf("%d", &temperatura);
-  printf("\n");
+  printf("Inserisci due numeri, separati da un trattino, nel formato N/N: ");
+  scanf("%d/%d", &numeri[0], &numeri[1]);
 
   // Output
-  if (temperatura > 30){
-    printf("Molto caldo! Non stare a sentire a nonna, la giacchetta non metterla.");
+  if (numeri[0] > numeri[1] && numeri[0] % numeri[1] == 0){
+    printf("%d è multiplo di %d\n\n\n", numeri[0], numeri[1]);
+    outputDone = true;
   }
-  if (temperatura <= 0){
-    printf("Molto freddo! Dici ad Abdelaziz Rhandi che forse è il caso di sospendere le lezioni!");
+  if (numeri[1] > numeri[0] && numeri[1] & numeri[0] == 0){
+    printf("%d è multiplo di %d\n\n\n", numeri[1], numeri[0]);
+    outputDone = true;
   }
-  if (temperatura > 20 && temperatura <= 30){
-    printf("Caldo.");
+  if (numeri[1] == numeri[0]){
+    printf("%d e %d sono uguali!\n\n\n", numeri[1], numeri[0]);
+    outputDone = true;
   }
-  if (temperatura > 10 && temperatura <= 20){
-    printf("Gradevole. Cioè, almeno per me. È un fattore soggettivo.");
+
+  if (outputDone == false){
+    printf("%d non è multiplo di %d, nè viceversa.\n", numeri[0], numeri[1]);
   }
-  if (temperatura > 0 && temperatura <= 10){
-    printf("Freddo. Mettiti una sciarpa.");
-  }
-  printf("\n");
+
   return(SUCCESS);
 }
