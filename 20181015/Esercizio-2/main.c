@@ -20,6 +20,7 @@ int main(){
   // Dichiarazione delle variabili
   float b, h;
   float perimetro, area, diagonale;
+
   // Acquisizione base - con ciclo per verifica errori
   for (;;){
     printf("Inserire base del rettangolo: ");
