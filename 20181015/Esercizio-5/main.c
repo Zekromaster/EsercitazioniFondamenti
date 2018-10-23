@@ -18,7 +18,7 @@
 int main(){
   // Dichirazione delle Variabili
   int numero;
-  int cifre[5];
+  int cifre[5]; // AVVISO AI NOVIZI: Si potrebbe usare cinque variabili chiamate c1, c2, c3, c4 e c5. Questo altro non è che un modo rapido di fare una cosa simile
   int current, next;
 
   // Ciclo di Input
@@ -37,7 +37,7 @@ int main(){
     numero = -numero;
   }
 
-  // Estrapolazione delle cifre singole
+  // Estrapolazione delle cifre singole -  Utilizzando cinque variabili chiamate c1, c2, c3, c4 e c5, non si può utilizzare un for, ma si deve effettuare manualmente ogni iterazione.
   current = 1;
   for (int i = 0; i < 5; i++){
     next = current*10;

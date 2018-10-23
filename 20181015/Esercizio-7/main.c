@@ -16,7 +16,7 @@
 //@Input: Tre numeri, rappresentanti i lati di un triangolo.
 //@Output: Una stringa che dice se il triangolo è isoscele o scaleno
 int main(){
-  float lati[3];
+  float lati[3]; // AVVISO AI NOVIZI: È possibile usare 3 variabili chiamate l1, l2 ed l3
   int status; // Variabile rappresentante lo stato - 0 => Scaleno; 1 => Isoscele; 2+ => Equilatero
   // Ciclo principale
   for(;;){
