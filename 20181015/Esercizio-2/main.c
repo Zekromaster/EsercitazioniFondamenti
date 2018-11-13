@@ -22,7 +22,7 @@ int main(){
   float perimetro, area, diagonale;
 
   // Acquisizione base - con ciclo per verifica errori
-  for (;;){
+  while (true){
     printf("Inserire base del rettangolo: ");
     scanf("%f", &b);
     if (b <= 0){
@@ -33,7 +33,7 @@ int main(){
   }
 
   // Acquisizione altezza - come sopra
-  for (;;){
+  while (true){
     printf("Inserire altezza del rettangolo: ");
     scanf("%f", &h);
     if (h <= 0){

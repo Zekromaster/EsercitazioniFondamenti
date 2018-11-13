@@ -19,7 +19,7 @@ int main(){
   // Dichiarazione delle Variabili
   int giorno, mese, anno;
   // Ciclo principale - da questo si uscirà solo quando l'input sarà corretto e semanticamente sensato
-  for (;;){
+  while (true){
     //Input
     printf("Inserisci il giorno del mese in cui sei nato in formato numerico: ");
     scanf("%d", &giorno);
