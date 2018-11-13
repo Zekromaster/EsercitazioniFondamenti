@@ -19,13 +19,13 @@ int main(){
   float lati[3]; // AVVISO AI NOVIZI: È possibile usare 3 variabili chiamate l1, l2 ed l3
   int status; // Variabile rappresentante lo stato - 0 => Scaleno; 1 => Isoscele; 2+ => Equilatero
   // Ciclo principale
-  for(;;){
+  while(true){
 
     // Ciclo di Input
     for (int i = 0; i < 3; i++){
 
       // Ciclo di Sanitizzazione degli Input
-      for(;;){
+      while(true){
         printf("Inserisci il lato numero %d: ", i+1);
         scanf("%f", &lati[i]);
 

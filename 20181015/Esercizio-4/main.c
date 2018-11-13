@@ -20,7 +20,7 @@ int main(){
   int mese, anno;
 
   // Ciclo principale - da questo si uscirà solo quando l'input sarà corretto e semanticamente sensato
-  for(;;){
+  while (true){
     // Input
     printf("Inserisci mese ed anno (nel formato \"mese\\anno\"): ");
     scanf("%d\\%d", &mese, &anno);

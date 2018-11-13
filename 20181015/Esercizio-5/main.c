@@ -22,7 +22,7 @@ int main(){
   int current, next;
 
   // Ciclo di Input
-  for (;;){
+  while (true){
     printf("Inserire un numero di 5 cifre: ");
     scanf("%d", &numero);
     if (numero > 99999){
