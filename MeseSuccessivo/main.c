@@ -11,7 +11,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>. */
 
-#include "../../definitions.h"
+#include "../definitions.h"
 
 //@Input: Una coppia di mese ed anno nel formato mese/anno
 //@Output: Il mese successivo
