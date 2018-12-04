@@ -11,34 +11,32 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>. */
 
-#include "../../definitions.h"
+#include "../definitions.h"
 
-//@Input: Una serie di numeri.
-//@Output: Il numero di numeri pari, dispari e nulli.
+//@Input: Una serie di numeri. Lo zero funge da sentinella.
+//@Output: La media degli stessi.
 int main(){
   // Dichiarazione delle Variabili
-  int numeroDiNumeriInteri, i, corrente;
-  int pos, neg, noitro;
+  int i;
+  float numero, media, somma;
 
   // Inizializzazione delle Variabili
-  pos = 0;
-  neg = 0;
-  noitro = 0;
+  somma = 0;
+  numero = 1;
+  i = 0;
 
-  // Input del numero di numeri interi
-  printf("Inserire il numero di numeri interi della serie: ");
-  scanf("%d", &numeroDiNumeriInteri);
+  // Input
+  do{
+    printf("Inserisci un numero: ");
+    scanf("%f", &numero);
+    somma += numero;
+    if (numero!=0) i++;
+  }while(numero!=0);
 
-  // Input dei numeri
-  for (i = 0; i < numeroDiNumeriInteri; i++){
-    printf("Inserisci il numero %d: ", i+1);
-    scanf("%d", &corrente);
-    if (corrente == 0) noitro++;
-    if (corrente > 0) pos++;
-    if (corrente < 0) neg++;
-  }
+  // Calcolo della Media
+  media = somma/i;
 
   // Output
-  printf("\nPositivi: %d\nNegativi:%d\nNeutri:%d\n", pos, neg, noitro);
+  printf("\nLa media è %.3f\n", media);
   return(SUCCESS);
 }

@@ -11,7 +11,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>. */
 
-#include "../../definitions.h"
+#include "../definitions.h"
 
 //@Input: Due numeri
 //@Output: Se i due numeri sono multipli l'uno dell'altro
@@ -26,11 +26,11 @@ int main(){
   scanf("%d/%d", &numeri[0], &numeri[1]);
 
   // Output
-  if (numeri[0] > numeri[1] && numeri[0] % numeri[1] == 0){
+  if ((numeri[0] > numeri[1]) && (numeri[0] % numeri[1] == 0)){
     printf("%d è multiplo di %d\n\n\n", numeri[0], numeri[1]);
     outputDone = true;
   }
-  if (numeri[1] > numeri[0] && numeri[1] & numeri[0] == 0){
+  if ((numeri[1] > numeri[0]) && (numeri[1] % numeri[0] == 0)){
     printf("%d è multiplo di %d\n\n\n", numeri[1], numeri[0]);
     outputDone = true;
   }

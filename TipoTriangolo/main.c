@@ -11,7 +11,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>. */
 
-#include "../../definitions.h"
+#include "../definitions.h"
 
 //@Input: Tre numeri, rappresentanti i lati di un triangolo.
 //@Output: Una stringa che dice se il triangolo è isoscele o scaleno
@@ -23,7 +23,6 @@ int main(){
 
     // Ciclo di Input
     for (int i = 0; i < 3; i++){
-
       // Ciclo di Sanitizzazione degli Input
       while(true){
         printf("Inserisci il lato numero %d: ", i+1);

@@ -11,7 +11,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>. */
 
-#include "../../definitions.h"
+#include "../definitions.h"
 
 //@Input: Il numero di interi in una lista e la lista stessa degli interi.
 //@Output: La media di tutti gli elementi.

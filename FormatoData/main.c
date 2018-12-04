@@ -11,7 +11,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>. */
 
-#include "../../definitions.h"
+#include "../definitions.h"
 
 //@Input: Giorno, mese e anno di nascita
 //@Output: Una stringa del formato gg/mm/aaaa, o un errore se la data è impossibile
