@@ -15,7 +15,7 @@
 
 //@Input: Una temperatura, in gradi celsius
 //@Output: Un'espressione empirica del suo effetto
-int main(){
+int main() {
   // Dichiarazione delle Variabili
   int temperatura;
 
@@ -25,21 +25,23 @@ int main(){
   printf("\n");
 
   // Output
-  if (temperatura > 30){
-    printf("Molto caldo! Non stare a sentire a nonna, la giacchetta non metterla.");
+  if (temperatura > 30) {
+    printf("Molto caldo! Non stare a sentire a nonna, la giacchetta non "
+           "metterla.");
   }
-  if (temperatura <= 0){
-    printf("Molto freddo! Dici ad Abdelaziz Rhandi che forse è il caso di sospendere le lezioni!");
+  if (temperatura <= 0) {
+    printf("Molto freddo! Dici ad Abdelaziz Rhandi che forse è il caso di "
+           "sospendere le lezioni!");
   }
-  if (temperatura > 20 && temperatura <= 30){
+  if (temperatura > 20 && temperatura <= 30) {
     printf("Caldo.");
   }
-  if (temperatura > 10 && temperatura <= 20){
+  if (temperatura > 10 && temperatura <= 20) {
     printf("Gradevole. Cioè, almeno per me. È un fattore soggettivo.");
   }
-  if (temperatura > 0 && temperatura <= 10){
+  if (temperatura > 0 && temperatura <= 10) {
     printf("Freddo. Mettiti una sciarpa.");
   }
   printf("\n");
-  return(SUCCESS);
+  return (SUCCESS);
 }

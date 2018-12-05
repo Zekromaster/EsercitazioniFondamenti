@@ -15,22 +15,25 @@
 
 //@Input: Tre numeri, rappresentanti i lati di un triangolo.
 //@Output: Una stringa che dice se il triangolo è isoscele o scaleno
-int main(){
-  float lati[3]; // AVVISO AI NOVIZI: È possibile usare 3 variabili chiamate l1, l2 ed l3
-  int status; // Variabile rappresentante lo stato - 0 => Scaleno; 1 => Isoscele; 2+ => Equilatero
+int main() {
+  float lati[3]; // AVVISO AI NOVIZI: È possibile usare 3 variabili chiamate l1,
+                 // l2 ed l3
+  int status; // Variabile rappresentante lo stato - 0 => Scaleno; 1 =>
+              // Isoscele; 2+ => Equilatero
   // Ciclo principale
-  while(true){
+  while (true) {
 
     // Ciclo di Input
-    for (int i = 0; i < 3; i++){
+    for (int i = 0; i < 3; i++) {
       // Ciclo di Sanitizzazione degli Input
-      while(true){
-        printf("Inserisci il lato numero %d: ", i+1);
+      while (true) {
+        printf("Inserisci il lato numero %d: ", i + 1);
         scanf("%f", &lati[i]);
 
         // Sanitizzazione dei Numeri Negativi
-        if (lati[i] <= 0){
-          printf("Un lato di un triangolo non può che essere positivo e maggiore di zero!\n");
+        if (lati[i] <= 0) {
+          printf("Un lato di un triangolo non può che essere positivo e "
+                 "maggiore di zero!\n");
           continue;
         }
 
@@ -42,8 +45,10 @@ int main(){
     }
 
     // Sanitizzazione dei tre lati
-    if (lati[0]+lati[1] < lati[2] || lati[1]+lati[2] < lati[0] || lati[0]+lati[2] < lati[1]){
-      printf("Nessun lato può essere maggiore della somma degli altri due!\n\n");
+    if (lati[0] + lati[1] < lati[2] || lati[1] + lati[2] < lati[0] ||
+        lati[0] + lati[2] < lati[1]) {
+      printf(
+          "Nessun lato può essere maggiore della somma degli altri due!\n\n");
       continue;
     }
 
@@ -53,22 +58,25 @@ int main(){
 
   // Calcolo dell'Output
   status = 0;
-  if (lati[0] == lati[1]) status++;
-  if (lati[1] == lati[2]) status++;
-  if (lati[0] == lati[2]) status++;
+  if (lati[0] == lati[1])
+    status++;
+  if (lati[1] == lati[2])
+    status++;
+  if (lati[0] == lati[2])
+    status++;
 
   // Output
-  switch(status){
-    case 0:
-      printf("Il triangolo è scaleno.\n\n");
-      break;
-    case 1:
-      printf("Il triangolo è isoscele.\n\n");
-      break;
-    default:
-      printf("Il triangolo è equilatero.\n\n");
-      break;
+  switch (status) {
+  case 0:
+    printf("Il triangolo è scaleno.\n\n");
+    break;
+  case 1:
+    printf("Il triangolo è isoscele.\n\n");
+    break;
+  default:
+    printf("Il triangolo è equilatero.\n\n");
+    break;
   }
 
-  return(SUCCESS);
+  return (SUCCESS);
 }

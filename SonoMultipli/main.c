@@ -15,7 +15,7 @@
 
 //@Input: Due numeri
 //@Output: Se i due numeri sono multipli l'uno dell'altro
-int main(){
+int main() {
 
   // Dichiarazione delle Variabili
   int numeri[2];
@@ -26,22 +26,22 @@ int main(){
   scanf("%d/%d", &numeri[0], &numeri[1]);
 
   // Output
-  if ((numeri[0] > numeri[1]) && (numeri[0] % numeri[1] == 0)){
+  if ((numeri[0] > numeri[1]) && (numeri[0] % numeri[1] == 0)) {
     printf("%d è multiplo di %d\n\n\n", numeri[0], numeri[1]);
     outputDone = true;
   }
-  if ((numeri[1] > numeri[0]) && (numeri[1] % numeri[0] == 0)){
+  if ((numeri[1] > numeri[0]) && (numeri[1] % numeri[0] == 0)) {
     printf("%d è multiplo di %d\n\n\n", numeri[1], numeri[0]);
     outputDone = true;
   }
-  if (numeri[1] == numeri[0]){
+  if (numeri[1] == numeri[0]) {
     printf("%d e %d sono uguali!\n\n\n", numeri[1], numeri[0]);
     outputDone = true;
   }
 
-  if (outputDone == false){
+  if (outputDone == false) {
     printf("%d non è multiplo di %d, nè viceversa.\n", numeri[0], numeri[1]);
   }
 
-  return(SUCCESS);
+  return (SUCCESS);
 }

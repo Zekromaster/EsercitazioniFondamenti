@@ -15,10 +15,10 @@
 
 //@Input: Un carattere
 //@Output: Il suo equivalente ASCII
-int main(){
+int main() {
   char carattere;
   printf("Inserire carattere: ");
   scanf("%c", &carattere);
   printf("L'equivalente numerico è %d\n", carattere);
-  return(SUCCESS);
+  return (SUCCESS);
 }

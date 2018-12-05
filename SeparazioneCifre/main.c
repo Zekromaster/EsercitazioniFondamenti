@@ -15,36 +15,42 @@
 
 //@Input: Un numero di 5 cifre
 //@Output: Le sue cifre, separate da 3 spazi
-int main(){
+int main() {
   // Dichirazione delle Variabili
   int numero;
-  int cifre[5]; // AVVISO AI NOVIZI: Si potrebbe usare cinque variabili chiamate c1, c2, c3, c4 e c5. Questo altro non è che un modo rapido di fare una cosa simile
+  int cifre[5]; /*AVVISO AI NOVIZI: Si potrebbe usare cinque variabili chiamate
+                  c1, c2, c3, c4 e c5. Questo altro non è che un modo rapido di
+                  fare una cosa simile*/
   int current, next;
 
   // Ciclo di Input
-  while (true){
+  while (true) {
     printf("Inserire un numero di 5 cifre: ");
     scanf("%d", &numero);
-    if (numero > 99999){
+    if (numero > 99999) {
       printf("Il numero deve contenere massimo 5 cifre!\n");
       continue;
     }
     break;
   }
 
-  // Convertiamo il numero nel suo valore assoluto, poichè ci interessano le cifre e non il segno
-  if (numero < 0){
+  // Convertiamo il numero nel suo valore assoluto, poichè ci interessano le
+  // cifre e non il segno
+  if (numero < 0) {
     numero = -numero;
   }
 
-  // Estrapolazione delle cifre singole -  Utilizzando cinque variabili chiamate c1, c2, c3, c4 e c5, non si può utilizzare un for, ma si deve effettuare manualmente ogni iterazione.
+  // Estrapolazione delle cifre singole -  Utilizzando cinque variabili chiamate
+  // c1, c2, c3, c4 e c5, non si può utilizzare un for, ma si deve effettuare
+  // manualmente ogni iterazione.
   current = 1;
-  for (int i = 0; i < 5; i++){
-    next = current*10;
-    cifre[i] = ((numero % next) - (numero % current))/current;
+  for (int i = 0; i < 5; i++) {
+    next = current * 10;
+    cifre[i] = ((numero % next) - (numero % current)) / current;
     current = next;
   }
 
   // Output
-  printf("Il numero è composto dalle seguenti cifre: %d   %d   %d   %d   %d\n", cifre[4], cifre[3], cifre[2], cifre[1], cifre[0]);
+  printf("Il numero è composto dalle seguenti cifre: %d   %d   %d   %d   %d\n",
+         cifre[4], cifre[3], cifre[2], cifre[1], cifre[0]);
 }
