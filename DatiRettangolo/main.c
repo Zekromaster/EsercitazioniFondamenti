@@ -16,16 +16,16 @@
 
 //@Input: Base e Altezza di un rettangolo
 //@Output: Perimetro, area e diagonale dello stesso
-int main(){
+int main() {
   // Dichiarazione delle variabili
   float b, h;
   float perimetro, area, diagonale;
 
   // Acquisizione base - con ciclo per verifica errori
-  while (true){
+  while (true) {
     printf("Inserire base del rettangolo: ");
     scanf("%f", &b);
-    if (b <= 0){
+    if (b <= 0) {
       printf("Le dimensioni devono essere positive!");
       continue;
     }
@@ -33,10 +33,10 @@ int main(){
   }
 
   // Acquisizione altezza - come sopra
-  while (true){
+  while (true) {
     printf("Inserire altezza del rettangolo: ");
     scanf("%f", &h);
-    if (h <= 0){
+    if (h <= 0) {
       printf("Le dimensioni devono essere positive!");
       continue;
     }
@@ -44,17 +44,18 @@ int main(){
   }
 
   // Calcolo del perimetro
-  perimetro = 2*(b+h);
+  perimetro = 2 * (b + h);
 
   // Calcolo dell'area
-  area = (b*h);
+  area = (b * h);
 
   // Calcolo della diagonale
-  diagonale = sqrt(b*b + h*h);
+  diagonale = sqrt(b * b + h * h);
 
   // Output
-  printf("Perimetro: %.2f\nArea: %.2f\nDiagonale: %.2f\n", perimetro, area, diagonale);
+  printf("Perimetro: %.2f\nArea: %.2f\nDiagonale: %.2f\n", perimetro, area,
+         diagonale);
 
   // Fine
-  return(SUCCESS);
+  return (SUCCESS);
 }

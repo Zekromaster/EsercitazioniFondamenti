@@ -15,7 +15,7 @@
 
 //@Input: Una serie di numeri. Lo zero funge da sentinella.
 //@Output: La media degli stessi.
-int main(){
+int main() {
   // Dichiarazione delle Variabili
   int i;
   float numero, media, somma;
@@ -26,17 +26,18 @@ int main(){
   i = 0;
 
   // Input
-  do{
+  do {
     printf("Inserisci un numero: ");
     scanf("%f", &numero);
     somma += numero;
-    if (numero!=0) i++;
-  }while(numero!=0);
+    if (numero != 0)
+      i++;
+  } while (numero != 0);
 
   // Calcolo della Media
-  media = somma/i;
+  media = somma / i;
 
   // Output
   printf("\nLa media è %.3f\n", media);
-  return(SUCCESS);
+  return (SUCCESS);
 }

@@ -15,34 +15,34 @@
 
 //@Input: Il numero di interi in una lista e la lista stessa degli interi.
 //@Output: La media di tutti gli elementi.
-int main(){
+int main() {
   // Dichiarazione delle variabili
   int dim;
   float media;
-  int numeri[65535];
+  int numeri[VECTOR_SIZE];
 
   // Input del numero di numeri - con ciclo di controllo
-  while (true){
+  while (true) {
     printf("Inserire il numero di elementi della serie: ");
     scanf("%d", &dim);
-    if (dim > 0){
+    if (dim > 0) {
       break;
     }
     printf("Il numero di elementi deve essere maggiore di 0!\n");
   }
 
   // Richiesta degli elementi
-  for (int i = 0; i < dim; i++){
-    printf("Inserire l'elemento numero %d: ", i+1);
+  for (int i = 0; i < dim; i++) {
+    printf("Inserire l'elemento numero %d: ", i + 1);
     scanf("%d", &numeri[i]);
   }
 
   // Calcolo della media
   media = 0;
-  for (int i = 0; i < dim; i++){
+  for (int i = 0; i < dim; i++) {
     media = media + numeri[i];
   }
-  media = media/dim;
+  media = media / dim;
 
   // Output
   printf("\nLa media è %.2f\n", media);

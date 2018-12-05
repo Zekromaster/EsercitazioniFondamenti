@@ -15,19 +15,21 @@
 
 //@Input: Una coppia di mese ed anno nel formato mese/anno
 //@Output: Il mese successivo
-int main(){
+int main() {
   // Dichiarazione delle Variabili
   int mese, anno;
 
-  // Ciclo principale - da questo si uscirà solo quando l'input sarà corretto e semanticamente sensato
-  while (true){
+  // Ciclo principale - da questo si uscirà solo quando l'input sarà corretto e
+  // semanticamente sensato
+  while (true) {
     // Input
     printf("Inserisci mese ed anno (nel formato \"mese\\anno\"): ");
     scanf("%d\\%d", &mese, &anno);
 
     // Sanitizzazione
-    if (mese > 12 || mese == 0){
-      printf("Il mese non può essere oltre il 12 o uguale a 0! Cosa sei, marziano?\n");
+    if (mese > 12 || mese == 0) {
+      printf("Il mese non può essere oltre il 12 o uguale a 0! Cosa sei, "
+             "marziano?\n");
       continue;
     }
 
@@ -36,10 +38,9 @@ int main(){
   }
 
   // Calcolo del mese successivo
-  anno = anno + (mese/12);
+  anno = anno + (mese / 12);
   mese = (mese % 12) + 1;
 
   // Output
   printf("Il mese successivo è il %d\\%d\n", mese, anno);
-
 }

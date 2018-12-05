@@ -15,7 +15,7 @@
 
 //@Input: Una serie di numeri.
 //@Output: Il numero di numeri pari, dispari e nulli.
-int main(){
+int main() {
   // Dichiarazione delle Variabili
   int numeroDiNumeriInteri, i, corrente;
   int pos, neg, noitro;
@@ -30,15 +30,18 @@ int main(){
   scanf("%d", &numeroDiNumeriInteri);
 
   // Input dei numeri
-  for (i = 0; i < numeroDiNumeriInteri; i++){
-    printf("Inserisci il numero %d: ", i+1);
+  for (i = 0; i < numeroDiNumeriInteri; i++) {
+    printf("Inserisci il numero %d: ", i + 1);
     scanf("%d", &corrente);
-    if (corrente == 0) noitro++;
-    if (corrente > 0) pos++;
-    if (corrente < 0) neg++;
+    if (corrente == 0)
+      noitro++;
+    if (corrente > 0)
+      pos++;
+    if (corrente < 0)
+      neg++;
   }
 
   // Output
   printf("\nPositivi: %d\nNegativi:%d\nNeutri:%d\n", pos, neg, noitro);
-  return(SUCCESS);
+  return (SUCCESS);
 }

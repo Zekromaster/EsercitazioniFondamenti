@@ -10,7 +10,10 @@
 
   // Useful stuff
   #define SUCCESS 0
+  #define VECTOR_SIZE 256
 
   // Boolean type
-  typedef enum {false, true} bool;
+  typedef int bool;
+  #define true 1
+  #define false 0
 #endif
