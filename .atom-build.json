@@ -1,0 +1,12 @@
+{
+  "cmd": "mkdir -p build && cd build && cmake ../ && make",
+  "name": "CMake && Make",
+  "targets": {
+    "CMake": {
+      "cmd": "mkdir -p build && cd build && cmake ../"
+    },
+    "Make": {
+      "cmd": "mkdir -p build && cd build && make"
+    }
+  }
+}

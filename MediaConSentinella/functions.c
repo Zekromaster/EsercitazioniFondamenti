@@ -16,26 +16,33 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-// Libraries
-#ifndef INCLUDED_DEFINITIONS
-  #define INCLUDED_DEFINITIONS
-  #include <stdio.h>
-  #include <stdlib.h>
+#include "../definitions.h"
 
-  // Author
-  #define AUTHOR "Zekromaster - Luca Cristiano"
-  #define AUTHORMAIL "dev@zekromaster.net"
+//@Input: Una serie di numeri. Lo zero funge da sentinella.
+//@Output: La media degli stessi.
+int exec_mediaconsentinella() {
+  // Dichiarazione delle Variabili
+  int i;
+  float numero, media, somma;
 
-  // Uscite
-  #define SUCCESS 0
-  #define ENOENT 2
+  // Inizializzazione delle Variabili
+  somma = 0;
+  numero = 1;
+  i = 0;
 
-  // Dimensioni
-  #define VECTOR_SIZE 256
+  // Input
+  do {
+    printf("Inserisci un numero: ");
+    scanf("%f", &numero);
+    somma += numero;
+    if (numero != 0)
+      i++;
+  } while (numero != 0);
 
-  // Boolean type
-  #ifndef bool
-    typedef enum {false, true} bool;
-  #endif
+  // Calcolo della Media
+  media = somma / i;
 
-#endif
+  // Output
+  printf("\nLa media è %.3f\n", media);
+  return (SUCCESS);
+}

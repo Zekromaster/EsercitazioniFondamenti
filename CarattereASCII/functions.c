@@ -16,26 +16,14 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-// Libraries
-#ifndef INCLUDED_DEFINITIONS
-  #define INCLUDED_DEFINITIONS
-  #include <stdio.h>
-  #include <stdlib.h>
+#include "../definitions.h"
 
-  // Author
-  #define AUTHOR "Zekromaster - Luca Cristiano"
-  #define AUTHORMAIL "dev@zekromaster.net"
-
-  // Uscite
-  #define SUCCESS 0
-  #define ENOENT 2
-
-  // Dimensioni
-  #define VECTOR_SIZE 256
-
-  // Boolean type
-  #ifndef bool
-    typedef enum {false, true} bool;
-  #endif
-
-#endif
+//@Input: Un carattere
+//@Output: Il suo equivalente ASCII
+int exec_carattereascii() {
+  char carattere;
+  printf("Inserire carattere: ");
+  scanf("%c", &carattere);
+  printf("L'equivalente numerico è %d\n", carattere);
+  return (SUCCESS);
+}

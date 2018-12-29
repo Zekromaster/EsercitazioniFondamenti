@@ -16,26 +16,19 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-// Libraries
-#ifndef INCLUDED_DEFINITIONS
-  #define INCLUDED_DEFINITIONS
-  #include <stdio.h>
-  #include <stdlib.h>
+#include "../definitions.h"
+#include "maincludes.h"
+#include "common.h"
 
-  // Author
-  #define AUTHOR "Zekromaster - Luca Cristiano"
-  #define AUTHORMAIL "dev@zekromaster.net"
-
-  // Uscite
-  #define SUCCESS 0
-  #define ENOENT 2
-
-  // Dimensioni
-  #define VECTOR_SIZE 256
-
-  // Boolean type
-  #ifndef bool
-    typedef enum {false, true} bool;
-  #endif
-
-#endif
+int main(){
+  int selected = -1;
+  printf("Seleziona cosa vuoi avviare, inserisci -1 per uscire senza avviare nulla!\n\n");
+  for (int i = 0; i<DIMENSIONI(programmi)-1; i++){
+    printf ("%d) %s - %s\n", i, programmi[i], descrizioni[i]);
+  }
+  printf("Inserisci: ");
+  scanf("%d", &selected);
+  if (selected < 0 || selected > DIMENSIONI(programmi) - 2) return (SUCCESS);
+  printf("\n\n%s - %s\n\n", programmi[selected], descrizioni[selected]);
+  return esegui(programmi[selected]);
+}

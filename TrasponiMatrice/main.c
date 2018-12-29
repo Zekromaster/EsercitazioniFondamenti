@@ -1,5 +1,5 @@
 #include "functions.h"
 
 int main(){
-  return exec_sudoku();
+  return exec_trasponimatrice();
 }
