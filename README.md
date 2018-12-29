@@ -4,11 +4,23 @@ Esercitazioni della Classe I-Z I Anno di Ingegneria Informatica aa 2018/2019 del
 
 ## Informazioni sulla Compilazione
 
-Il gitignore è progettato per ignorare i file di estensione .built. Pertanto, é consigliabile in fase di compilazione, utilizzare il comando 'gcc main.c -o main.built' o altri comandi che producano file .built. Questo permette, in caso si voglia contribuire alla repository, di non committare accidentalmente file binari.  
+`mkdir build && cd build && cmake ../ && make` crea un eseguibile che permette la scelta tra le varie opzioni.  
+Eseguendo `make curseless` invece di `make`, è possibile creare un'eseguibile che usi un più semplice menù testuale invece della
+libreria *ncurses*.  
+**NOTA BENE: "make curseless" è necessario solo qualora la libreria Curses sia presente nel sistema. Se Ncurses non è presente,
+nessuna componente che lo richieda sarà compilata e "make" compilera la versione con menù testuale.**
 
-Inoltre, per alcuni programmi è necessario linkare librerie specifiche. Per evitare di dover leggere il sorgente di ogni singolo software, elencherò di seguito le librerie necessarie.  
+È inoltre possibile compilare un singolo programma tra i vari disponibili, apponendo a "make" il nome del programma interamente minuscolo e in snake_case (SeriePariDispari => serie_pari_dispari, CarattereASCII => carattere_ascii).
 
--   DatiRettangolo: Richiede math.h - su GNU+Linux, si linka con gcc -lm
+## Informazioni sul Codice
+
+Tutto il codice di un dato programma si trova nel relativo file "functions.c". Il tradizionale "main()" è, in questo caso, la funzione "exec_nomeprogramma()". I vari programmi "main.c" contengono solo il seguente codice:
+```
+#include "functions.h"
+int main(){
+  return exec_nomeprogramma();
+}
+```
 
 ## Giorni degli Esercizi
 
@@ -25,3 +37,4 @@ Inoltre, per alcuni programmi è necessario linkare librerie specifiche. Per evi
 |            | SeriePariDispari   |
 | 13/11/2018 | MediaConVettore    |
 | 04/12/2018 | Sudoku             |
+| ??/12/2018 | TrasponiMatrice	  |
