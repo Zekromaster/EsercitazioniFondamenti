@@ -2,11 +2,13 @@
   #define MAINCLUDED
   #include "../Calore/functions.h"
   #include "../CarattereASCII/functions.h"
+  #include "../CinqueNumeri/functions.h"
   #include "../DatiRettangolo/functions.h"
   #include "../FormatoData/functions.h"
   #include "../MediaConSentinella/functions.h"
   #include "../MediaConVettore/functions.h"
   #include "../MeseSuccessivo/functions.h"
+  #include "../NumeriPari/functions.h"
   #include "../OrdinareArray/functions.h"
   #include "../SeparazioneCifre/functions.h"
   #include "../SeriePariDispari/functions.h"
@@ -14,6 +16,7 @@
   #include "../Sudoku/functions.h"
   #include "../TipoTriangolo/functions.h"
   #include "../TrasponiMatrice/functions.h"
+  #include "../TriangoloStellato/functions.h"
   #include "../definitions.h"
   #include <string.h>
 #endif

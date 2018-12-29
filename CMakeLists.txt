@@ -17,6 +17,10 @@ set(CARATTEREASCII
     CarattereASCII/main.c
    )
 
+set(CINQUENUMERI
+    CinqueNumeri/functions.c
+    CinqueNumeri/main.c
+   )
 
 set(DATIRETTANGOLO
     DatiRettangolo/functions.c
@@ -42,6 +46,11 @@ set(MESESUCCESSIVO
     MeseSuccessivo/functions.c
     MeseSuccessivo/main.c
    )
+
+set(NUMERIPARI
+   NumeriPari/functions.c
+   NumeriPari/main.c
+  )
 
 set(ORDINAREARRAY
     OrdinareArray/functions.c
@@ -78,14 +87,21 @@ set(TRASPONIMATRICE
    TrasponiMatrice/main.c
   )
 
+set(TRIANGOLOSTELLATO
+   TriangoloStellato/functions.c
+   TriangoloStellato/main.c
+  )
+
 set(ALL_SOURCES
     Calore/functions.c
     CarattereASCII/functions.c
+    CinqueNumeri/functions.c
     DatiRettangolo/functions.c
     FormatoData/functions.c
     MediaConSentinella/functions.c
     MediaConVettore/functions.c
     MeseSuccessivo/functions.c
+    NumeriPari/functions.c
     OrdinareArray/functions.c
     SeparazioneCifre/functions.c
     SeriePariDispari/functions.c
@@ -93,6 +109,7 @@ set(ALL_SOURCES
     Sudoku/functions.c
     TipoTriangolo/functions.c
     TrasponiMatrice/functions.c
+    TriangoloStellato/functions.c
     00-Main/common.c
    )
 
@@ -144,6 +161,13 @@ add_executable(carattere_ascii
                ${CARATTEREASCII}
               )
 
+add_executable(cinque_numeri
+               ${CINQUENUMERI}
+               )
+target_link_libraries(cinque_numeri
+                      m
+                     )
+
 add_executable(dati_rettangolo
                ${DATIRETTANGOLO}
               )
@@ -167,6 +191,11 @@ add_executable(mese_successivo
                ${MESESUCCESSIVO}
               )
 
+add_executable(numeri_pari
+               ${NUMERIPARI}
+              )
+
+
 add_executable(ordinare_array
                ${ORDINAREARRAY}
               )
@@ -187,6 +216,10 @@ add_executable(tipo_triangolo
                ${TIPOTRIANGOLO}
               )
 
-add_executable(trasponi_matrix
+add_executable(trasponi_matrice
                ${TRASPONIMATRICE}
+              )
+
+add_executable(triangolo_stellato
+               ${TRIANGOLOSTELLATO}
               )
