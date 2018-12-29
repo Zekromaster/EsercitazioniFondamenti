@@ -23,6 +23,8 @@ int main(){
 ```
 
 ## Giorni degli Esercizi
+| Giorno     | Esercizio          |
+| ---------- | ------------------ |
 | 15/10/2018 | FormatoData        |
 |            | DatiRettangolo     |
 |            | CarattereASCII     |
