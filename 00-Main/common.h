@@ -7,6 +7,7 @@
     "Calore",
     "Carattere ASCII",
     "Cinque Numeri",
+    "Converti Binario",
     "Dati Rettangolo",
     "Formato Data",
     "Media Con Sentinella",
@@ -26,7 +27,8 @@
   char *descrizioni[] = {
     "Valuta una temperatura empiricamente",
     "Converte un carattere in ASCII",
-    "Dati 5 numeri, restituisce somma, media e radice della somma",
+    "Dati 5 numeri, restituisce il maggiore, la media e la radice della somma",
+    "Dato un numero binario, restituisce l'equivalente decimale",
     "Trova area, perimetro e diagonale",
     "Converte tra formati di date",
     "Calcola la media",

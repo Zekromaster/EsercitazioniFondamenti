@@ -20,7 +20,7 @@
 
 //@Input: Una temperatura, in gradi celsius
 //@Output: Un'espressione empirica del suo effetto
-int exec_calore() {
+int exec_calore(void) {
   // Dichiarazione delle Variabili
   int temperatura;
 

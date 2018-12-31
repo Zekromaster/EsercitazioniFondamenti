@@ -73,7 +73,7 @@ void trasponimatrice_stampaMatrice(float matrix[VECTOR_SIZE][VECTOR_SIZE], int r
 
 //@Input: Una file contenente una matrice.
 //@Output: La trasposta, nella forma del file trasposta.txt
-int exec_trasponimatrice() {
+int exec_trasponimatrice(void) {
   float matrix[VECTOR_SIZE][VECTOR_SIZE];
   int righe, colonne;
 

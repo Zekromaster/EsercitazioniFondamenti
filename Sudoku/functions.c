@@ -129,7 +129,7 @@ FUNZIONE CHE ESEGUE L'INPUT E OUTPUT DEL SUDOKU
 ===========================================================*/
 /*@Input: Un sudoku e le sue dimensioni
   @Output: Se il sudoku è valido*/
-int exec_sudoku() {
+int exec_sudoku(void) {
   int sudoku[VECTOR_SIZE][VECTOR_SIZE];
   int size;
 

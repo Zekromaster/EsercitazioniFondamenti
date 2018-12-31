@@ -1,4 +1,4 @@
 #ifndef NUMERIPARI
   #define NUMERIPARI
-  int exec_numeripari();
+  int exec_numeripari(void);
 #endif

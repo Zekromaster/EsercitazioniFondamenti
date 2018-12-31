@@ -22,6 +22,12 @@ set(CINQUENUMERI
     CinqueNumeri/main.c
    )
 
+set(CONVERTIBINARIO
+    ConvertiBinario/functions.c
+    ConvertiBinario/main.c
+   )
+
+
 set(DATIRETTANGOLO
     DatiRettangolo/functions.c
     DatiRettangolo/main.c
@@ -96,6 +102,7 @@ set(ALL_SOURCES
     Calore/functions.c
     CarattereASCII/functions.c
     CinqueNumeri/functions.c
+    ConvertiBinario/functions.c
     DatiRettangolo/functions.c
     FormatoData/functions.c
     MediaConSentinella/functions.c
@@ -165,6 +172,13 @@ add_executable(cinque_numeri
                ${CINQUENUMERI}
                )
 target_link_libraries(cinque_numeri
+                      m
+                     )
+
+add_executable(converti_binario
+               ${CONVERTIBINARIO}
+              )
+target_link_libraries(converti_binario
                       m
                      )
 

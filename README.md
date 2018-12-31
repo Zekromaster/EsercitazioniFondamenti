@@ -28,6 +28,7 @@ Tutto il codice di un dato programma si trova nel relativo file "functions.c". I
 | 15/10/2018 | Calore             |
 |            | CarattereASCII     |
 |            | CinqueNumeri       |
+|            | ConvertiBinario    |
 |            | DatiRettangolo     |
 |            | FormatoData        |
 |            | MeseSuccessivo     |
@@ -41,3 +42,4 @@ Tutto il codice di un dato programma si trova nel relativo file "functions.c". I
 | 13/11/2018 | MediaConVettore    |
 | 04/12/2018 | Sudoku             |
 | ??/12/2018 | TrasponiMatrice    |
+|            | OrdinareArray      |

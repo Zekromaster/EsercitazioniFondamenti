@@ -20,7 +20,7 @@
 
 //@Input: Un numero
 //@Output: Tutti i numeri pari precedenti
-int exec_numeripari() {
+int exec_numeripari(void) {
   // Dichiarazione delle Variabili
   int n;
   printf("Inserire un numero: ");

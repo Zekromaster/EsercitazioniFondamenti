@@ -19,6 +19,14 @@
 #include "../definitions.h"
 #include <math.h>
 
+int cinquenumeri_max(int *v){
+  int max = v[0];
+  for (int i = 0; i < 5; i++){
+    if (v[i] > max) max = v[i];
+  }
+  return max;
+}
+
 int cinquenumeri_somma(int* v){
   int s = 0;
   for (int i = 0; i < 5; i++){
@@ -32,17 +40,17 @@ int cinquenumeri_media(int* v){
 }
 
 //@Input: Cinque numeri
-//@Output: Media, somma e radice quadrata della sommma
-int exec_cinquenumeri() {
+//@Output: Media, numero più alto e radice quadrata della sommma
+int exec_cinquenumeri(void) {
   int numeri[5];
   for (int i = 0; i < 5; i++){
     printf("Inserisci il numero %d: ", i);
     scanf("%d", &numeri[i]);
   }
-  printf("La somma e' %d\n\
+  printf("Il numero maggiore e' %d\n\
           La media e' %d\n\
           La radice della somma e' %.2f\n",
-          cinquenumeri_somma(numeri),
+          cinquenumeri_max(numeri),
           cinquenumeri_media(numeri),
           sqrt(cinquenumeri_somma(numeri))
         );
