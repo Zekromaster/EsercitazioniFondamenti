@@ -20,7 +20,7 @@
 
 //@Input: Tre numeri, rappresentanti i lati di un triangolo.
 //@Output: Una stringa che dice se il triangolo è isoscele o scaleno
-int exec_tipotriangolo() {
+int exec_tipotriangolo(void) {
   float lati[3];
   int status; // Variabile rappresentante lo stato - 0 => Scaleno; 1 =>
               // Isoscele; 2+ => Equilatero

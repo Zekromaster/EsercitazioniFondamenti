@@ -20,7 +20,7 @@
 
 //@Input: Due numeri
 //@Output: Se i due numeri sono multipli l'uno dell'altro
-int exec_sonomultipli() {
+int exec_sonomultipli(void) {
 
   // Dichiarazione delle Variabili
   int numeri[2];

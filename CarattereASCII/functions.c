@@ -20,7 +20,7 @@
 
 //@Input: Un carattere
 //@Output: Il suo equivalente ASCII
-int exec_carattereascii() {
+int exec_carattereascii(void) {
   char carattere;
   printf("Inserire carattere: ");
   scanf("%c", &carattere);

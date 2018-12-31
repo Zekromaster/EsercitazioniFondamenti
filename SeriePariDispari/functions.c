@@ -20,7 +20,7 @@
 
 //@Input: Una serie di numeri.
 //@Output: Il numero di numeri pari, dispari e nulli.
-int exec_serieparidispari() {
+int exec_serieparidispari(void) {
   // Dichiarazione delle Variabili
   int numeroDiNumeriInteri, i, corrente;
   int pos, neg, noitro;

@@ -78,7 +78,7 @@ void ordinarearray_stampaTest(int vettore[VECTOR_SIZE], int lunghezza){
 
 //@Input: Un file che rappresenta un Array di numeri
 //@Output: L'array, ordinato, in un altro file
-int exec_ordinarearray(){
+int exec_ordinarearray(void){
   int vettore[VECTOR_SIZE];
   int size;
   ordinarearray_leggiFile(vettore, &size);

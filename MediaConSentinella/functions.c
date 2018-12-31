@@ -20,7 +20,7 @@
 
 //@Input: Una serie di numeri. Lo zero funge da sentinella.
 //@Output: La media degli stessi.
-int exec_mediaconsentinella() {
+int exec_mediaconsentinella(void) {
   // Dichiarazione delle Variabili
   int i;
   float numero, media, somma;

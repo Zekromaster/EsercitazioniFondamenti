@@ -4,6 +4,7 @@ int esegui(char* s){
   if (strcmp(s, "Calore") == 0) return exec_calore();
   if (strcmp(s, "Carattere ASCII") == 0) return exec_carattereascii();
   if (strcmp(s, "Cinque Numeri") == 0) return exec_cinquenumeri();
+  if (strcmp(s, "Converti Binario") == 0) return exec_convertibinario();
   if (strcmp(s, "Dati Rettangolo") == 0) return exec_datirettangolo();
   if (strcmp(s, "Formato Data") == 0) return exec_formatodata();
   if (strcmp(s, "Media Con Sentinella") == 0) return exec_mediaconsentinella();

@@ -1,4 +1,4 @@
 #ifndef SUDOKU
   #define SUDOKU
-  int exec_sudoku();
+  int exec_sudoku(void);
 #endif

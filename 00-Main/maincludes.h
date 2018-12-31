@@ -3,6 +3,7 @@
   #include "../Calore/functions.h"
   #include "../CarattereASCII/functions.h"
   #include "../CinqueNumeri/functions.h"
+  #include "../ConvertiBinario/functions.h"
   #include "../DatiRettangolo/functions.h"
   #include "../FormatoData/functions.h"
   #include "../MediaConSentinella/functions.h"

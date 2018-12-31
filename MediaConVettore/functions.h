@@ -1,4 +1,4 @@
 #ifndef MEDIACONVETTORE
   #define MEDIACONVETTORE
-  int exec_mediaconvettore();
+  int exec_mediaconvettore(void);
 #endif

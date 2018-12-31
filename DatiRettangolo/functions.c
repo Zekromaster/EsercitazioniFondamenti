@@ -21,7 +21,7 @@
 
 //@Input: Base e Altezza di un rettangolo
 //@Output: Perimetro, area e diagonale dello stesso
-int exec_datirettangolo() {
+int exec_datirettangolo(void) {
   // Dichiarazione delle variabili
   float b, h;
   float perimetro, area, diagonale;

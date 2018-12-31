@@ -1,4 +1,4 @@
 #ifndef TIPOTRIANGOLO
   #define TIPOTRIANGOLO
-  int exec_tipotriangolo();
+  int exec_tipotriangolo(void);
 #endif

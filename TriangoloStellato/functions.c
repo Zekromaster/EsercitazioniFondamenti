@@ -20,7 +20,7 @@
 
 //@Input: Tre numeri, rappresentanti i lati di un triangolo.
 //@Output: Una stringa che dice se il triangolo è isoscele o scaleno
-int exec_triangolostellato() {
+int exec_triangolostellato(void) {
   int n;
   printf("Inserire l'altezza del triangolo: ");
   scanf("%d", &n);

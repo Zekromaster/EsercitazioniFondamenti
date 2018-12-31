@@ -17,36 +17,30 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "../definitions.h"
+#include <math.h>
 
-//@Input: Una coppia di mese ed anno nel formato mese/anno
-//@Output: Il mese successivo
-int exec_mesesuccessivo(void) {
-  // Dichiarazione delle Variabili
-  int mese, anno;
-
-  // Ciclo principale - da questo si uscirà solo quando l'input sarà corretto e
-  // semanticamente sensato
-  while (true) {
-    // Input
-    printf("Inserisci mese ed anno (nel formato \"mese\\anno\"): ");
-    scanf("%d\\%d", &mese, &anno);
-
-    // Sanitizzazione
-    if (mese > 12 || mese == 0) {
-      printf("Il mese non può essere oltre il 12 o uguale a 0! Cosa sei, "
-             "marziano?\n");
+//@Input: Un numero, cifra per cifra, binario
+//@Output: Il numero decimale
+int exec_convertibinario(void){
+  int numero, i, contatoreMax;
+  numero = 0;
+  printf("Di quante cifre si compone il numero? ");
+  scanf("%d", &contatoreMax);
+  printf("Il programma chiederà ora le cifre a partire da quella meno significativa (quella\
+  più a destra)\n");
+  for (i = 0; i < contatoreMax; i++){
+    int tmp;
+    printf("Inserire la cifra %d: ", i);
+    scanf("%d", &tmp);
+    if (!(tmp == 0 || tmp == 1)){
+      printf("Inserire una cifra valida!\n");
+      i--;
       continue;
     }
-
-    // Uscita dal Ciclo
-    break;
+    tmp = pow(2, i)*tmp;
+    printf("Aggiunta di %d al numero.\n", tmp);
+    numero+=tmp;
   }
-
-  // Calcolo del mese successivo
-  anno = anno + (mese / 12);
-  mese = (mese % 12) + 1;
-
-  // Output
-  printf("Il mese successivo è il %d\\%d\n", mese, anno);
-  return(SUCCESS);
+  printf("Il numero binario inserito ha un valore decimale di %d\n", numero);
+  return (SUCCESS);
 }

@@ -20,7 +20,7 @@
 
 //@Input: Il numero di interi in una lista e la lista stessa degli interi.
 //@Output: La media di tutti gli elementi.
-int exec_mediaconvettore() {
+int exec_mediaconvettore(void) {
   // Dichiarazione delle variabili
   int dim;
   float media;

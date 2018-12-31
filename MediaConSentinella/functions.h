@@ -1,4 +1,4 @@
 #ifndef MEDIACONSENTINELLA
   #define MEDIACONSENTINELLA
-  int exec_mediaconsentinella();
+  int exec_mediaconsentinella(void);
 #endif

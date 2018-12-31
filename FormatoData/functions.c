@@ -21,7 +21,7 @@
 //@Input: Giorno, mese e anno di nascita
 //@Output: Una stringa del formato gg/mm/aaaa, o un errore se la data è
 // impossibile
-int exec_formatodata() {
+int exec_formatodata(void) {
   // Dichiarazione delle Variabili
   int giorno, mese, anno;
   // Ciclo principale - da questo si uscirà solo quando l'input sarà corretto e
