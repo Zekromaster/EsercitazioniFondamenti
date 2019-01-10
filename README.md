@@ -23,23 +23,24 @@ Tutto il codice di un dato programma si trova nel relativo file "functions.c". I
 
 ## Giorni degli Esercizi
 
-| Giorno     | Esercizio          |
-| ---------- | ------------------ |
-| 15/10/2018 | Calore             |
-|            | CarattereASCII     |
-|            | CinqueNumeri       |
-|            | ConvertiBinario    |
-|            | DatiRettangolo     |
-|            | FormatoData        |
-|            | MeseSuccessivo     |
-|            | TriangoloStellato  |
-|            | NumeriPari         |
-|            | SeparazioneCifre   |
-|            | SonoMultipli       |
-|            | TipoTriangolo      |
-| 23/10/2018 | MediaConSentinella |
-|            | SeriePariDispari   |
-| 13/11/2018 | MediaConVettore    |
-| 04/12/2018 | Sudoku             |
-| ??/12/2018 | TrasponiMatrice    |
-|            | OrdinareArray      |
+| Giorno     | Esercizio                 |
+| ---------- | ------------------------- |
+| 15/10/2018 | Calore                    |
+|            | CarattereASCII            |
+|            | CinqueNumeri              |
+|            | ConvertiBinario           |
+|            | DatiRettangolo            |
+|            | FormatoData               |
+|            | MeseSuccessivo            |
+|            | TriangoloStellato         |
+|            | NumeriPari                |
+|            | SeparazioneCifre          |
+|            | SonoMultipli              |
+|            | TipoTriangolo             |
+| 23/10/2018 | MediaConSentinella        |
+|            | SerieCrescenteDecrescente |
+|            | SeriePositiviNegativi     |
+| 13/11/2018 | MediaConVettore           |
+| 04/12/2018 | Sudoku                    |
+| ??/12/2018 | TrasponiMatrice           |
+|            | OrdinareArray             |

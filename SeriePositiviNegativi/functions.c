@@ -19,8 +19,8 @@
 #include "../definitions.h"
 
 //@Input: Una serie di numeri.
-//@Output: Il numero di numeri pari, dispari e nulli.
-int exec_serieparidispari(void) {
+//@Output: Il numero di numeri positivi, negativi e nulli.
+int exec_seriepositivinegativi(void) {
   // Dichiarazione delle Variabili
   int numeroDiNumeriInteri, i, corrente;
   int pos, neg, noitro;

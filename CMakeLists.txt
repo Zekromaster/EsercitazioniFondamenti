@@ -68,9 +68,14 @@ set(SEPARAZIONECIFRE
     SeparazioneCifre/main.c
    )
 
-set(SERIEPARIDISPARI
-   SeriePariDispari/functions.c
-   SeriePariDispari/main.c
+set(SERIECRESCENTEDECRESCENTE
+   SerieCrescenteDecrescente/functions.c
+   SerieCrescenteDecrescente/main.c
+ )
+
+set(SERIEPOSITIVINEGATIVI
+   SeriePositiviNegativi/functions.c
+   SeriePositiviNegativi/main.c
   )
 
 set(SONOMULTIPLI
@@ -111,7 +116,8 @@ set(ALL_SOURCES
     NumeriPari/functions.c
     OrdinareArray/functions.c
     SeparazioneCifre/functions.c
-    SeriePariDispari/functions.c
+    SerieCrescenteDecrescente/functions.c
+    SeriePositiviNegativi/functions.c
     SonoMultipli/functions.c
     Sudoku/functions.c
     TipoTriangolo/functions.c
@@ -209,7 +215,6 @@ add_executable(numeri_pari
                ${NUMERIPARI}
               )
 
-
 add_executable(ordinare_array
                ${ORDINAREARRAY}
               )
@@ -217,6 +222,15 @@ add_executable(ordinare_array
 add_executable(separazione_cifre
                ${SEPARAZIONECIFRE}
               )
+
+add_executable(serie_crescente_decrescente
+               ${SERIECRESCENTEDECRESCENTE}
+              )
+
+add_executable(serie_positivi_negativi
+               ${SERIEPOSITIVINEGATIVI}
+              )
+
 
 add_executable(sono_multipli
                ${SONOMULTIPLI}
