@@ -13,7 +13,8 @@ int esegui(char* s){
   if (strcmp(s, "Numeri Pari") == 0) return exec_numeripari();
   if (strcmp(s, "Ordinare Array") == 0) return exec_ordinarearray();
   if (strcmp(s, "Separazione Cifre") == 0) return exec_separazionecifre();
-  if (strcmp(s, "Serie Pari Dispari") == 0) return exec_serieparidispari();
+  if (strcmp(s, "Serie Crescente O Decrescente") == 0) return exec_seriecrescentedecrescente();
+  if (strcmp(s, "Serie Positivi E Negativi") == 0) return exec_seriepositivinegativi();
   if (strcmp(s, "Sono Multipli") == 0) return exec_sonomultipli();
   if (strcmp(s, "Sudoku") == 0) return exec_sudoku();
   if (strcmp(s, "Tipo Triangolo") == 0) return exec_tipotriangolo();

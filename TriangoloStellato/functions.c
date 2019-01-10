@@ -18,8 +18,8 @@
 
 #include "../definitions.h"
 
-//@Input: Tre numeri, rappresentanti i lati di un triangolo.
-//@Output: Una stringa che dice se il triangolo è isoscele o scaleno
+//@Input: Un numero
+//@Output: Una piramide di "*" di quell'altezza
 int exec_triangolostellato(void) {
   int n;
   printf("Inserire l'altezza del triangolo: ");
