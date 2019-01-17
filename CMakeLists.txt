@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 project(EsercitazioniFondamenti)
 enable_language(C)
+set (CMAKE_C_FLAGS "-std=c99 ${CMAKE_C_FLAGS}")
 
 find_package(Curses)
 if(CURSES_HAVE_NCURSES_H)
